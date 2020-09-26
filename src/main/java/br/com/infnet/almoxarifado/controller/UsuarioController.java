@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import br.com.infnet.almoxarifado.model.negocio.Setor;
 import br.com.infnet.almoxarifado.model.negocio.Usuario;
 import br.com.infnet.almoxarifado.model.service.UsuarioService;
 import io.swagger.annotations.ApiOperation;

@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.infnet.almoxarifado.model.negocio.Produto;
 import br.com.infnet.almoxarifado.model.service.ProdutoService;
+import io.swagger.annotations.ApiImplicitParam;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
 import io.swagger.annotations.ApiResponses;
@@ -22,7 +23,13 @@ public class ProdutosController {
 
 	@Autowired
 	private ProdutoService service;
-
+	
+	@ApiImplicitParam(name = "tipoProduto", value = "Para criar os subprodutos utilize a key *tipoProduto* com o value: "
+			+ "INF - para produtos de Informática. "
+			+ "PAP - para produtos de Papelaria. "
+			+ "MAN - para produtos de Manutenção. "
+	)
+	
 	@ApiResponses(value = { @ApiResponse(code = 422, message = "Dados Inválidos para a Criação"), })
 	@ApiOperation(value = "Cadastra um novo produto")
 	@PostMapping()

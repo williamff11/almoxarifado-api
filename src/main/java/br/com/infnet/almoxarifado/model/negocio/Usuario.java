@@ -37,6 +37,11 @@ public class Usuario {
 		super();
 	}
 
+	public Usuario(Integer id) {
+		super();
+		this.id = id;
+	}
+
 	public Integer getId() {
 		return id;
 	}

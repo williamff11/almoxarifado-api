@@ -50,6 +50,11 @@ public class Produto {
 		super();
 	}
 
+	public Produto(Integer id) {
+		super();
+		this.id = id;
+	}
+
 	public Integer getId() {
 		return id;
 	}

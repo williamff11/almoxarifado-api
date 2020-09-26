@@ -23,11 +23,9 @@ public class Setor {
 	public Setor() {
 	}
 
-	public Setor(Integer id, String nome, String descricao) {
+	public Setor(Integer id) {
 		super();
 		this.id = id;
-		this.nome = nome;
-		this.descricao = descricao;
 	}
 
 	@Override

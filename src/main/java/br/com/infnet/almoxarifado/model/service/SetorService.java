@@ -5,7 +5,6 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import br.com.infnet.almoxarifado.model.negocio.Produto;
 import br.com.infnet.almoxarifado.model.negocio.Setor;
 import br.com.infnet.almoxarifado.model.repository.ISetorRepository;
 
