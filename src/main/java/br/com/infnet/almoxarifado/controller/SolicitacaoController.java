@@ -44,7 +44,7 @@ public class SolicitacaoController {
 
 	@ApiOperation(value = "Retorna uma Solicitação")
 	@GetMapping(value = "/{id}")
-	public Solicitacao consultar(@PathVariable Integer id) {
+	public Solicitacao obterPorId(@PathVariable Integer id) {
 		return service.obterPorId(id);
 	}
 }
