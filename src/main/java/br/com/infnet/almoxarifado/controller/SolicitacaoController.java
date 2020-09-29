@@ -32,8 +32,8 @@ public class SolicitacaoController {
 	@ApiResponses(value = { @ApiResponse(code = 422, message = "Dados Inválidos para a Criação"), })
 	@ApiOperation(value = "Cadastra uma Solicitação")
 	@PostMapping()
-	public void incluir(@RequestBody Solicitacao emprestimo) {
-		service.incluir(emprestimo);
+	public void incluir(@RequestBody Solicitacao solicitacao) {
+		service.incluir(solicitacao);
 	}
 
 	@ApiOperation(value = "Exclui uma Solicitação")
